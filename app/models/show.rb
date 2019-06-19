@@ -25,7 +25,7 @@ class Show < ActiveRecord::Base
   end
   
   def self.shows_by_alphabetical_order
-    show = Show.order(release_da: :desc)
+    show = Show.sort
   end
   
 end
