@@ -6,6 +6,7 @@ class Show < ActiveRecord::Base
   
   def self.most_popular_show
     Show.sort_by rating:
+    Show.last
   end
   
   def self.lowest_rating
